@@ -1,0 +1,495 @@
+/* GLOBAL PROPERTIES */
+
+*, *::after, *::before { /* Makes math easier if everything is at 0 */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Sets the default font of the entire html */
+}
+
+.flex {
+    display: flex;
+}
+
+.flex.wrap {
+    flex-wrap: wrap;
+}
+
+.flex.evenly {
+    justify-content: space-evenly;
+}
+
+.flex.space-between {
+    justify-content: space-between; /* Splits the nav div's to be on each side */
+}
+
+.flex.align {
+    align-items: center;
+}
+
+.flex.vert {
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* HEADER LAYOUT */
+
+header {
+    background-color: #6a7b8b;
+}
+
+#header-logo { /* Changes the properties of the mr. coffee logo in the header */
+    margin: 10px 35px;
+    width: 150px;
+}
+
+nav a { /* Changes the hyper links in the header */
+    text-decoration: none; /* Removes the hyperlink underline */
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+}
+
+#navigation:last-child { /* Regardless of what the last child is the extra space should always be there */
+    margin-right: 60px;
+}
+
+/* FOOTER LAYOUT */
+
+footer {
+    background-color: #6a7b8b;
+    
+}
+
+#footer-logo { /* Changes the properties of the footer logo */
+    margin: 20px 35px;
+    width: 45px;
+    
+}
+
+.link-logos img { /* Changes the properties of the social media */
+    width: 25px;
+}
+
+#footer-text { /* Changes the properties of the text displayed in the footer */
+    color: white;
+}
+
+#social-media { /* Changes the properties of the text and social media logos in footer*/
+    align-items: center;
+    position:absolute;
+    top: 30%;
+    right: 0;
+    left: 0;
+}
+
+/* HOMEPAGE */
+
+main {
+    background-color: #f5f5f5;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding: 0 8%; /* Makes it so there's always a margin above and below each element */
+}
+
+#main-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    min-width: 150px;
+}
+
+.container { /* Creates a container to position the .tilte on the main-image, otherwise it takes the % from the size of the entire html */
+    position: relative;
+}
+
+#main-image { /* Changes the properties of the main image */
+    margin-left: auto; 
+    margin-right: auto;
+    width: 100%; /* Matches it's margins to the set margines for main, makes it then take up 100% of that space */
+}
+
+.discover { /* Changes the properties of the text on the main image */
+    position: absolute;
+    top: 10%;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+
+.card {
+    align-items: center;
+    padding: 15px;
+    background-color: #bac1c8;
+    width: 30%; /* Each card takes up 30% of the screen so only 3 can fit on one row, if it was 25% then 4 would fit */
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 5px -2px black; /* Gives the box a more defined look */
+}
+
+.card img {
+    display: block;
+    margin: 10px auto;
+    width: 40%;
+}
+
+h3 {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    font-size: 22px;
+    margin: 10px;
+}
+
+.card p {
+    color: #fff; /* changes card text to white */
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.pseudo-button { /* Changes the properties of the En savoir plus and turns it into a pseudo-button */
+    color: white;
+    background-color: #6a7b8b;
+    border-radius: 5px; /* Curves the edges */
+    padding: 15px;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    width: 230px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 1px 1px 5px -3px black;
+}
+
+.pseudo-button:hover {
+    background-color: #6a7b8bbc; /* Lighten's the colour of the pseudo-button when hovered over with a mouse */
+}
+
+#open {
+    width: 80px;
+    margin-right: 30px;
+}
+
+#welcome {
+    align-items: center;
+}
+
+.group {
+    text-align: center;
+    width: 100%;
+    margin-top: 5%;
+    max-width: 374px;
+    
+}
+
+#final {
+    max-width: unset;
+    padding-bottom: 5%;
+}
+
+/* ABOUT US */
+
+.about-img-one {
+    width: 40%;
+    margin-left: 60px;
+    margin-bottom: 50px;
+    object-fit: fill;
+    max-height: 510px;
+    max-width: 340px;
+}
+
+.about-img-two {
+    width: 40%;
+    margin-right: 60px;
+    margin-bottom: 50px;
+    object-fit: fill;
+    max-height: 510px;
+    max-width: 340px;
+}
+
+.about-header {
+    text-align: unset; /* Unset's the h2 property margin */
+    margin: 0px; /* Unset's the h2 property margin */
+    margin-bottom: 30px;
+    font-size: 150%;
+    max-width: 330px;
+}
+
+.about-text p, p.about-text {
+    margin: 20px 0px;
+    font-size: 90%;
+    max-width: 400px;
+}
+
+/* CONTACT US */
+
+#contact-us {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#contact-us > img:last-child {
+    padding: 50px 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.contact-header {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.form-style div input, .form-style textarea {
+    background-color: #c8ccd4;
+    /* color: #fff; */
+    font-size: 100%;
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px;
+    border: none;
+    outline: none;
+    height: 50px;
+    resize: none;
+}
+
+.form-style textarea {
+    height: 100px;
+}
+
+.form-style label {
+    color: #5c5b5b;
+    font-size: 20px;
+}
+
+.form-style div {
+    margin: 7px 0px;
+}
+
+.form-style input:focus, textarea:focus {
+    background-color: #c8ccd480;
+  }
+
+.form-style div:last-child {
+    text-align: center;
+    margin-top: 30px;
+}
+
+::placeholder {
+    color: white;
+    font-weight: 700;
+    padding: 10px
+}
+
+.required { /* changes the colour of the asterisk */
+    color: #6a7b8b;
+}
+
+#confirmation-popup {
+    margin: 0 auto;
+    padding: 35px;
+    width: 85%;
+    min-width: 723px;
+    max-width: 900px;
+    font-weight: bold;
+    background-color: #ffffff;
+    border: 1px solid #979797;
+    top: 20%;
+    bottom: 25%;
+}
+
+.dark-logo {
+    display: block;
+    margin: 10px;
+    width: 70px;
+}
+
+#confirmation-popup div:last-child {
+    text-align: center;
+}
+
+#submitButton {
+    border: none;
+}
+
+#confirmation-popup h2 {
+    margin: 10px;
+}
+
+#popup-text {
+    margin: 50px 100px;
+    text-align: left;
+}
+
+#sent {
+    align-items: center;
+    position:absolute;
+    top: 5%;
+    right: 0;
+    left: 0;
+}
+
+#close-button {
+    margin: 20px 0px;
+    border: none;
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+    color: white;
+    font-size: 30px;
+    text-shadow: -1px 1px 4px black; /* Gives the text a more defined look */
+}
+
+h2 {
+    color: #5c5b5b;
+    text-align: center;
+    font-size: 30px;
+    margin: 40px;
+    font-weight: 700;
+}
+
+h3 {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    font-size: 22px;
+    margin: 10px;
+    text-shadow: 1px 1px 1px grey; /* Gives the text a more defined look */
+}
+
+.standard p, p.standard {
+    color: #5c5b5b;
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.contact {
+    font-size: 24px;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 768px) { /* properties change when the screen is less than 650px*/
+
+    /* HEADER AND FOOTER */
+    header .flex {
+        display: block; /* Changes the image to be displayed as a block */
+        text-align: center; /* Aligns the blocks to be centered */
+    }
+    footer .flex {
+        display: block; /* Changes the image to be displayed as a block */
+        text-align: center; /* Aligns the blocks to be centered */
+    }
+    #program .flex{
+        display: block; /* Changes the image to be displayed as a block */
+        text-align: center; /* Aligns the blocks to be centered */
+    }
+    nav > div.flex { 
+        padding-bottom: 10px; /* Adds some padding between the header and main */
+    }
+    #footer-text {
+        padding: 5px 0px;
+    }
+    #navigation:last-child { /* Removes the right margin to let it center properly on mobile */
+        margin-right: 0px;
+    }
+    #footer-logo { /* Changes the footer logo image */
+        margin: 0px;
+        padding-top: 5px;
+        width: 40px;
+    }
+    #header-logo { /* Changes the header logo image */
+        margin: 5px;
+        width: 150px;
+    }
+
+    /* MAINPAGE */
+    .card {
+        width: 100%; /* makes it so only one card is able to fit on a row of the screen*/
+    }
+    .card img {
+        width: 20%;
+    }
+    #open {
+        margin-right: 0px;
+    }
+    .group {
+        max-width: unset;
+    }
+    #social-media {
+        position: relative;
+    }
+    #mobile-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .weekdays {
+        text-align: left;
+    }
+
+    /* ABOUT US */
+    #about-main {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .about-img-one {
+        transform: rotate(90deg); /* The element will visually rotate but not 'physically' */
+        width: 60%;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+    .about-img-two {
+        width: 100%;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+    #bottom-text-margin > .about-text:last-child {
+        margin-bottom: 0px;
+    }
+    .flex.temp-wrap {
+        flex-wrap: wrap;
+    }
+
+    /* CONTACT US */
+    #contact-us {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+}
+    @media screen and (max-width: 850px) {
+            #confirmation-popup {
+        width: 90%;
+        height: fit-content;
+    }
+    #confirmation-popup .flex {
+        display: block;
+    }
+    #sent {
+        position: relative;
+    }
+    .dark-logo {
+        margin: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #popup-text {
+        margin: 25px 60px;
+    }
+}
+
+/*  */
+/* Changes the properties of the */

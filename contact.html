@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Les coordonnées et l'emplacement de notre café M. Coffee"> <!-- meta description, google translated english to french -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="#TODO">
+    <meta property="og:title" content="Nous contacter">
+    <meta property="og:description" content="Les coordonnées et l'emplacement de notre café M. Coffee">
+    <meta property="og:image" content="#TODO">
+    <meta property='og:locale' content='fr_FR'>
+    <title>Nous contacter | Mr. Coffee</title>
+    <link rel="stylesheet" href="/application.css" >
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Google fonts import -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Google fonts import -->
+    <script src="/formHandler.js"></script>
+</head>
+<body>
+    <header>
+        <nav class='flex align space-between'>
+            <img id='header-logo' src="Assets/full_logo_white.png" alt="Light Mr.Coffee Full Logo">
+            <div class="flex auto" id='navigation'>
+                <a href="/index.html">Accueil</a>
+                <a href="/about.html">Qui sommes-nous?</a>
+                <a href="/contact.html">Nous contacter</a>
+            </div>
+        </nav>
+    </header>
+    <main id='contact-us'>  
+        <dialog id='confirmation-popup'>
+            <div class='flex container'>
+                <div class="dark-logo-div">
+                    <img class="dark-logo" src="/Assets/logo_dark.png" alt="Simple dark Mr.Coffee logo">
+                </div>
+                <div class="flex wrap vert" id="sent">
+                    <h2>MERCI</h2>
+                    <h2>Votre message a bien été envoyé&nbsp;!</h2>
+                </div>
+            </div>
+            <div class="standard">
+                <p id="popup-text">Nous essaierons d’y répondre au mieux dans les plus brefs délais. À bientot chez Mr.Coffee</p>
+                <button class="pseudo-button" id="close-button">FERMER</button>
+            </div>
+        </dialog>
+        <img id='main-logo' src="Assets/logo_mrcoffee.png" alt="Dark Mr.Coffee Full Logo">
+        <h2 class="contact-header">Dites nous tout !</h2> 
+        <form class="form-style">
+            <div>
+                <label for="last-name">Nom <span class="required">*</span></label>
+                <input id="last-name" type="text" name="last-name" required>
+            </div>
+            <div>
+                <label for="first-name">Prénom <span class="required">*</span></label>
+                <input id="first-name" type="text" name="first-name" required>
+            </div>
+            <div>
+                <label for="phone-number">Téléphone</label>
+                <input id="phone-number" type="tel" name="phone-number">
+            </div>
+            <div>
+                <label for="email">Adresse mail <span class="required">*</span></label>
+                <input id="email" type="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Message <span class="required">*</span></label>
+                <textarea id="message" name="message" placeholder="Tapez votre message ici" required></textarea>
+            </div>
+            <div>
+                <button class='pseudo-button' id="submitButton" type="submit">ENVOYER</button> <!-- Reusing the same pseudo-button css from index.html as the styling is exactly the same -->
+            </div>
+        </form>
+        <h2 class="contact-header">On vous attend !</h2>
+        <p class="standard"><strong>Mr.Coffee</strong><br />15 place Jules Guesde<br />>75006 Paris</p>
+        <p class="standard">Tel : +33 9 46 25 78 45<br />Mail : contact@mr-coffee.com</p>
+        <img src="/Assets/carte_contact.png" alt="Google maps image">
+    </main>
+    <footer>
+        <div class="flex container">
+            <img id="footer-logo" src="Assets/logo_blanc.png" alt="Light Mr Coffe Logo">
+            <div class= 'flex vert' id="social-media">            
+                <p id="footer-text">Suivez nous sur les réseaux sociaux !</p>
+                <nav class="flex link-logos">
+                    <a href="/www.linkedin.com"><img src="/Assets/logo_linkedin.png" alt="LinkedIn"></a>                            
+                    <a href="/www.twitter.com"><img src="/Assets/logo_twitter.png" alt="Twitter"></a>
+                    <a href="/www.facebook.com"><img src="/Assets/logo_facebook.png" alt="Facebook"></a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
