@@ -17,3 +17,4 @@ Project 2 for Incode
 - James Summergreene
 
 ## License
+MIT
