@@ -26,9 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
             validTextArea = true
         }
 
-        console.log(validTextArea)
-        console.log(textArea.value)
-
         // Checks if the phone number is not inputed at all since it's not required
         let emptyPhoneNumber = false
 
@@ -48,19 +45,19 @@ document.addEventListener("DOMContentLoaded", () => {
             popUp.showModal()
             form.reset()
         }
-        else if (validFirstName === false) {
+        if (validFirstName === false) {
             firstName.style.webkitTextFillColor="red"
         }
-        else if (validLastName === false) {
+        if (validLastName === false) {
             lastName.style.webkitTextFillColor="red"
         }
-        else if (validEmail === false) {
+        if (validEmail === false) {
             email.style.webkitTextFillColor="red"
         }
-        else if (validPhoneNumber === false) {
+        if (validPhoneNumber === false) {
             phoneNumber.style.webkitTextFillColor="red"
         }
-        else if (validTextArea === false) {
+        if (validTextArea === false) {
             textArea.style.webkitTextFillColor="red"
         }
 

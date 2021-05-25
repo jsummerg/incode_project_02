@@ -474,6 +474,7 @@ h3 {
             #confirmation-popup {
         width: 90%;
         height: fit-content;
+        min-width: none;
     }
     #confirmation-popup .flex {
         display: block;
